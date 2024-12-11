@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Manipulasi Dokumen html</title>
+</head>
+<body>
+
+    <p>
+        Di SMA Harapan, Sinta selalu merasa terasing. Meskipun banyak teman sekelasnya yang ramah, dia tak pernah benar-benar merasa diterima. Sinta lebih suka menyendiri, membaca buku, atau menggambar di pojokan kelas. Dia bukan tipe gadis yang suka bersosialisasi, apalagi bergaul dengan kelompok populer. Setiap kali melihat Ardi, anak lelaki yang terkenal di sekolah karena kehebatannya dalam olahraga dan karisma yang tak terbantahkan, hatinya sering merasa gugup. Ardi adalah segalanya bagi sekolah ini, dan Sinta merasa sangat jauh darinya.
+
+Suatu pagi, saat guru membagikan tugas kelompok, Sinta terkejut ketika namanya dipasangkan dengan Ardi. “Kamu dan Ardi, kerjakan tugas sejarah bersama,” kata ibu guru sambil tersenyum. Sinta merasa pusing, seolah dunia berputar lebih cepat. Bagaimana mungkin dia bisa bekerja dengan Ardi? Dia bahkan tidak tahu harus memulai dari mana. Sinta berusaha tetap tenang, tetapi ketegangan jelas terasa.
+
+Ardi, yang duduk di sampingnya, hanya menatap dengan senyuman kecil. “Jadi, kita mulai dari mana?” tanya Ardi dengan nada santai. Sinta tidak bisa berkata apa-apa selain menjelaskan topik tugas mereka. Ardi hanya mengangguk, tampak mendengarkan. Selama beberapa menit pertama, Sinta merasa canggung dan tidak tahu harus berkata apa. Namun, seiring waktu berjalan, Ardi mulai membuka diri. Ternyata, di balik sikap cerianya, Ardi juga memiliki sisi yang lebih serius dan penuh perhatian. Mereka mulai berbicara lebih banyak tentang tugas dan kehidupan mereka masing-masing.
+
+Hari-hari berlalu, dan mereka menghabiskan lebih banyak waktu bersama untuk mengerjakan tugas. Sinta mulai melihat sisi lain dari Ardi yang belum pernah dia kenal sebelumnya. Ardi bukan hanya anak populer yang selalu dikelilingi teman-temannya, tapi juga seseorang yang sangat memperhatikan detail kecil, seperti bagaimana Sinta selalu menggigit ujung pulpen saat berpikir. Setiap kali Sinta merasa kesulitan, Ardi selalu ada untuk membantu, dengan cara yang lembut dan penuh kesabaran.
+
+Suatu sore, saat mereka berdua duduk di taman sekolah untuk menyelesaikan tugas terakhir, Ardi berbicara dengan nada yang lebih serius. “Kamu tahu, awalnya aku merasa tugas ini akan membosankan. Tapi sekarang, aku senang bisa bekerja bareng kamu. Kamu nggak seperti yang aku kira,” kata Ardi sambil tersenyum. Sinta terdiam, merasa jantungnya berdegup kencang. “Aku… aku juga merasa sama,” jawabnya, tak tahu mengapa kata-kata itu muncul begitu saja.
+
+Saat tugas mereka selesai, Ardi mengajak Sinta berjalan bersama ke kelas. Di jalan, Ardi menggenggam tangan Sinta dengan lembut. “Terima kasih sudah bekerja keras bareng aku. Semoga kita bisa terus berhubungan, ya?” katanya.
+
+Sinta merasa dunia seakan berhenti sejenak. Di tengah keramaian sekolah, dia merasakan sesuatu yang lebih dari sekadar persahabatan. Sesuatu yang tumbuh begitu alami, seiring waktu yang mereka habiskan bersama. Cinta, meskipun tak terduga, hadir begitu sederhana. 
+
+Saat itu juga, Sinta menyadari bahwa hidup di sekolah tidak harus selalu tentang status atau popularitas. Terkadang, yang penting adalah keberanian untuk membuka hati dan mengenal seseorang lebih dalam.
+</p>
+    <button class="cmdTampil">Tampilkan Text</button>
+
+
+
+    <script src="jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $('.cmdTampil').hide()
+
+            $('p').on('click',function(){
+                $(this).hide(500)
+                $('.cmdTampil').show()
+            })
+            $('.cmdTampil').on('click',function(){
+                $('p').show(1000)
+                $(this).hide()
+            })
+        })
+
+    </script>
+</body>
+</html>
